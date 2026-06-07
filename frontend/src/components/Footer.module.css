@@ -1,0 +1,90 @@
+.footer {
+  background: #1d1d1f;
+  color: #86868b;
+  padding: 64px 24px 0;
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  flex: 1;
+  min-width: 240px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #60a5fa, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.brandDesc {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-top: 16px;
+  color: #6e6e73;
+}
+
+.cols {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.col {
+  min-width: 160px;
+}
+
+.colTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #f5f5f7;
+  margin: 0 0 16px;
+}
+
+.col p {
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 0 0 4px;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linkList li,
+.linkList a {
+  font-size: 13px;
+  line-height: 2;
+  color: #6e6e73;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.linkList a:hover {
+  color: #f5f5f7;
+}
+
+.bottom {
+  max-width: 1100px;
+  margin: 48px auto 0;
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+}
+
+.bottom p {
+  font-size: 12px;
+  color: #515154;
+  margin: 0;
+}

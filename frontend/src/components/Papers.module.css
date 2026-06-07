@@ -1,0 +1,144 @@
+.section {
+  padding: 100px 24px;
+  background: #fff;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.title {
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: #1d1d1f;
+  margin: 0 0 12px;
+}
+
+.desc {
+  font-size: 17px;
+  color: #86868b;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.yearGroup {
+  margin-bottom: 40px;
+}
+
+.year {
+  font-size: 28px;
+  font-weight: 700;
+  color: #d1d1d6;
+  margin: 0 0 16px;
+  letter-spacing: -0.02em;
+}
+
+.item {
+  background: #fbfbfd;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.item:hover {
+  border-color: rgba(37, 99, 235, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.expanded {
+  border-color: rgba(37, 99, 235, 0.15);
+}
+
+.itemHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+}
+
+.itemMain {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.itemTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1d1d1f;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+.itemMeta {
+  font-size: 13px;
+  color: #86868b;
+  line-height: 1.4;
+}
+
+.itemMeta em {
+  font-style: italic;
+}
+
+.arrow {
+  font-size: 12px;
+  color: #86868b;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.arrowUp {
+  transform: rotate(180deg);
+}
+
+.abstract {
+  padding: 0 24px 24px;
+  animation: slideDown 0.3s ease;
+}
+
+.abstract p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #515154;
+  margin: 0 0 12px;
+}
+
+.doi {
+  font-size: 13px;
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.doi:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
